@@ -1,0 +1,11 @@
+.background {
+    overflow: hidden;
+
+    &::before {
+        content: ' ';
+        display: block;
+        @include position(fixed, 0);
+        background: rgba(0, 0, 0, 0.1);
+        clip-path: polygon(100% 10%, 100% 0%, 100% 100%, -50% 100%);
+    }
+}

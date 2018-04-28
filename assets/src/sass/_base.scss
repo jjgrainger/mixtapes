@@ -1,0 +1,20 @@
+html,
+body {
+    background: #2f2a2a;
+    background: #251f1f;
+    color: #fff;
+
+    // margin: 0;
+    // height: 100%;
+    overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    color: #1db954;
+}

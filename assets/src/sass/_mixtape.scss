@@ -1,0 +1,101 @@
+.mixtape-cover {
+    display: block;
+    float: right;
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+
+    transition: all ease .3s;
+    transition-delay: .2s;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+
+    @media (orientation: portrait) {
+        float: none;
+        margin: auto;
+    }
+}
+
+.mixtape-number {
+    font-size: 4rem;
+    color: rgba(#fff, 0.1);
+    border-bottom: .15em solid rgba(#fff, 0.1);
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: -2px;
+
+    @media(max-width: 600px) {
+        font-size: 2rem;
+    }
+}
+
+
+.mixtape-title {
+    font-size: 2.75rem;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+
+    @media(max-width: 600px) {
+        font-size: 1.5em;
+    }
+}
+
+.mixtape-feature {
+    color: rgba(#fff, 0.5);
+    margin-bottom: 1.5rem;
+
+    @media(max-width: 600px) {
+        margin-bottom: 1rem;
+    }
+}
+
+.mixtape-title,
+.mixtape-feature,
+.mixtape-button {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50px);
+    transition: all ease .8s;
+    transition-delay: .3s;
+}
+
+.mixtape-feature { transition-delay: .4s; }
+.mixtape-button { transition-delay: .5s; }
+
+.item.is-selected {
+
+    .mixtape-cover {
+        transform: perspective(1000px) rotateY(15deg);
+
+        @media (orientation: portrait) {
+            transform: perspective(1000px) rotateY(0deg);
+        }
+    }
+
+    .mixtape-title,
+    .mixtape-feature,
+    .mixtape-button {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: .75rem;
+    text-align: center;
+    text-decoration: none;
+
+    border: 2px solid #1db954;
+    border-radius: 5px;
+    transition: all ease .3s;
+}
+
+.btn:hover {
+    background: #1db954;
+    color: #191414;
+    color: #fff;
+}

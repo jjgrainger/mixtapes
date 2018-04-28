@@ -1,0 +1,25 @@
+.main-title {
+    font-size: 9rem;
+    font-weight: bold;
+
+    @media(max-width: 600px) {
+        font-size: 3rem;
+    }
+}
+
+.main-description {
+    color: rgba(#fff, 0.5);
+}
+
+.about h2 {
+    font-size: 9rem;
+    font-weight: bold;
+
+    @media(max-width: 600px) {
+        font-size: 3rem;
+    }
+}
+
+.about p {
+    color: rgba(#fff, 0.5);
+}

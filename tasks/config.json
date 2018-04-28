@@ -1,0 +1,18 @@
+{
+    "server": {
+        "root": "./",
+        "port": "8000"
+    },
+    "styles": {
+        "src": "assets/src/sass/app.scss",
+        "dest": "assets/css"
+    },
+    "scripts": {
+        "src": "assets/src/js/app.js",
+        "dest": "assets/js"
+    },
+    "watch": {
+        "assets/src/sass/**/*.scss" : ["styles"],
+        "assets/src/js/**/*.js": ["scripts"]
+    }
+}
